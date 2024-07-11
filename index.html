@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone </title>
+    <link rel="icon" href="img/logo.png" class="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head> 
+
+<body>
+    <div class="main">
+
+        <!-- sidebar -->
+        
+        <div class="sidebar">
+            <div class="home">
+                <div class="home-option" style="opacity: 1;">
+                    <a href="#"> <i class="fa-brands fa-spotify"></i> Spotify </a>
+                </div>
+
+                <div class="home-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"> Home </a>
+                </div>
+
+                <div class="home-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#"> Search </a>
+                </div>
+            </div>
+
+
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option">
+                        <img src="img/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="lib-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Create your first playlist</p>
+                    <p class="p2">It's easy, we will help you</p>
+                    <button class="lib-btn"> Create playlist </button>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Let's find podcast to follow</p>
+                    <p class="p2">We'll keep you updated on new episodes</p>
+                    <button class="lib-btn"> Browse Podcast </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="contents">
+
+            <div class="nav">
+
+                <div class="nav-1">
+                    <div>
+                        <button class="arrow-btn"> <i class="fa-solid fa-angle-left"></i></button>  &nbsp;
+                        <button class="arrow-btn"> <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+            
+                    <div class="nav-options">
+                        <button class="light-btn"> &nbsp; Explore Premium &nbsp; </button>
+                        <button class="dark-btn"> &nbsp; <i class="fa-solid fa-download"></i> Install App &nbsp; </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-bell"></i> </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-user"></i> </button>
+                    </div>
+                </div>
+
+                <div class="nav-2">
+                    <button class="all-btn"> &nbsp; All &nbsp; </button>
+                    <button class="next-btn"> &nbsp; Music &nbsp; </button>
+                    <button class="next-btn"> &nbsp; Podcasts &nbsp;</button>
+                </div>
+            </div>
+
+            <h1> Made For You </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/weekly.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Discover Weekly </p>
+                    <p class="card-info"> Your weekly <br> mixtape of fresh... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/daily1.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Daily Mix 1 </p>
+                    <p class="card-info"> Shubh,AP Dhillon, Yo Yo Honey Singh... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/daily2.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Daily Mix 2 </p>
+                    <p class="card-info"> JERRY,Prabh Singh, Riar Saab and more </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/daily3.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Daily Mix 3 </p>
+                    <p class="card-info"> Mitraz, Darshan Raval, The Prophe...  </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/daily4.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Daily Mix 4 </p>
+                    <p class="card-info"> MC Square, Khasa Aala Chahar, KD... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/daily5.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Daily Mix 5 </p>
+                    <p class="card-info"> spiral. </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/daily6.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Daily Mix 6 </p>
+                    <p class="card-info"> Stalag 13 </p>
+                </div>
+            </div>
+
+            <h1> Best of artists </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/sidhu.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> This is Sidhu... </p>
+                    <p class="card-info"> The essential tracks all in one playlist. </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/dosanjh.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> This is Dilijit... </p>
+                    <p class="card-info"> Punjabi superstar's biggest hits. </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/ap.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> This is AP Dhillon </p>
+                    <p class="card-info"> By Spotify </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/shubh.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> This is Shubh </p>
+                    <p class="card-info"> This is Shubh.The essential tracks,al... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/prophec.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> This is The... </p>
+                    <p class="card-info"> This is The PropheC. The essential... </p>
+                </div>
+
+                <div class="card" style="background-color: #121212; cursor: default;">
+                </div>
+
+                <div class="card" style="background-color: #121212; cursor: default;">
+                </div>
+            </div>
+
+            <h1> Recommended for today </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/aam jahe munde.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Aam Jahe Munde </p>
+                    <p class="card-info"> Parmish Verma, PARDHAAN, Desi... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/kalaastar.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Kalaastar </p>
+                    <p class="card-info"> Yo Yo Honey Singh, Rony Ajnali, Gill M... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/white brown.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> White Brown Black </p>
+                    <p class="card-info"> Avvy Sra, Karan Aujla, Jaani </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/admirin.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Admirin'You(feat... </p>
+                    <p class="card-info"> Karan Aujla, Ikky, Preston Pablo </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/rollin.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Still Rollin </p>
+                    <p class="card-info"> Shubh </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/dhundhala.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Dhundhala </p>
+                    <p class="card-info"> Yashraj, Dropped Out, Talwiinder </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/sessions.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> 3:00 AM Sessions </p>
+                    <p class="card-info"> Badshah</p>
+                </div>
+            </div>
+
+            <h1> Popular Albums </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/etr.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Ek Tha Raja</p>
+                    <p class="card-info"> Badshah </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/moosetape.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Moosetape </p>
+                    <p class="card-info"> Sidhu Moose Wala </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/rollin.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Still Rollin </p>
+                    <p class="card-info"> Shubh </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/rockstar.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Rockstar </p>
+                    <p class="card-info"> A.R.Rahman,Irshad Kamil </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/admirin.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Making Memories </p>
+                    <p class="card-info"> Karan Aujla, Ikky </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/naina.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Naina(from Crew) </p>
+                    <p class="card-info"> Dilijit Dosanjh, Badshah, Raj R... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/dard.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Dard </p>
+                    <p class="card-info"> Darshan Raval </p>
+                </div>
+            </div>
+
+            <h1> Shows to try </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/gita.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> SHRIMAD...</p>
+                    <p class="card-info"> Amit Wadhwa </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/mahabharata.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> The Stories of... </p>
+                    <p class="card-info"> Sudipta Bhawmik </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/horror.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Horror Podcast... </p>
+                    <p class="card-info"> RJ M Praveen </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/msa.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> MSA previously... </p>
+                    <p class="card-info"> Charlotte </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/dehshat.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> SCARY HORROR... </p>
+                    <p class="card-info"> RJ M Praveen </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/horror tape.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Horror Tape </p>
+                    <p class="card-info"> V.K. Rawat </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/chanakya.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Chanakya Niti </p>
+                    <p class="card-info"> Kiran Chavda </p>
+                </div>
+            </div>
+
+            <h1> Popular artists </h1>
+
+            <div class="cards">
+                <div class="artist-card">
+                    <img src="img/pritam.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Pritam </p>
+                    <p class="card-info"> Artist </p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="img/arijit.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Arijit Singh </p>
+                    <p class="card-info"> Artist </p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="img/darshan.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Darshan Raval </p>
+                    <p class="card-info"> Artist </p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="img/rahman.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> A.R. Rahman </p>
+                    <p class="card-info"> Artist </p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="img/dilijit.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Diljit Dosanjh </p>
+                    <p class="card-info"> Artist </p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="img/badshah.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Badshah </p>
+                    <p class="card-info"> Artist </p>
+                </div>
+
+                <div class="artist-card">
+                    <img src="img/vishal.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Vishal Mishra </p>
+                    <p class="card-info"> Artist </p>
+                </div>
+            </div>
+
+            <h1> Based on your recent listening </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/top punjabi.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Top Punjabi... </p>
+                    <p class="card-info"> The most streamed artists of 2022 in... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/punjabi party.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Party Hits Punjabi </p>
+                    <p class="card-info"> That's when we brought bhangra i... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/top 2024.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Top Tracks 2024 </p>
+                    <p class="card-info"> The most streamed songs of 2024 in... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/desi hits.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Desi Hits </p>
+                    <p class="card-info"> Best of South Asian Music. Cover:Dilijit... </p>
+                </div>
+
+                <div class="card" style="background-color: #121212; cursor: default;">
+                </div>
+
+                <div class="card" style="background-color: #121212; cursor: default;">
+                </div>
+
+                <div class="card" style="background-color: #121212; cursor: default;">
+                </div>
+            </div>
+
+
+            <h1> Popular Radio </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/udit radio.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Udit Narayan... </p>
+                    <p class="card-info"> With Kumar Sanu, Alka Yagnik,... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/kishore radio.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Kishore Kumar... </p>
+                    <p class="card-info"> With Mohammed Rafi, Asha Bhosle,... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/arijit radio.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Arijit Singh Radio </p>
+                    <p class="card-info"> With Neha Kakkar, Pritam, KK and more </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/sidhu radio.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Sidhu Moose... </p>
+                    <p class="card-info"> With Ammy Virk, Amrit Maan,... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/karan radio.jpg" alt="card-image">
+                    <p class="card-title"> Karan Aujla Radio </p>
+                    <p class="card-info"> With Arjan Dhillon, Prem Dhillon,... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/honey radio.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Yo Yo Honey... </p>
+                    <p class="card-info"> With Imran Khan, Badshah, Mika... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/shubh radio.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Shubh Radio </p>
+                    <p class="card-info"> With AP Dhillon, Gurinder Gill, Tegi... </p>
+                </div>
+            </div>
+
+
+            <h1> Charts </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/hot punjabi.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Hot Hits Punjabi </p>
+                    <p class="card-info"> Catch the hottest Punjabi tracks with... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/telugu.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Hot Hits Telugu </p>
+                    <p class="card-info"> Tune in to the Hottest Tracks of... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/top 50.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Top 50 - India </p>
+                    <p class="card-info"> Your daily update of the most played... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/tamil.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Latest Tamil </p>
+                    <p class="card-info"> New Music from Kollywood. Cover:... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/new punjabi.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> New Music... </p>
+                    <p class="card-info"> Stay updated with all the smashing... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/top global.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Top 50 - Global </p>
+                    <p class="card-info"> Your daily update of the most played... </p>
+                </div>
+
+                <div class="card" style="background-color: #121212; cursor: default;">
+                </div>
+            </div>
+
+
+            <h1> Today's biggest hits </h1>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="img/trending.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Trending Now... </p>
+                    <p class="card-info"> Every track you're listening/should b... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/hot hindi.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Hot Hits Hindi </p>
+                    <p class="card-info"> Hottest Hindi Music served here.Cove... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/hot punjabi.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Hot Hits Punjabi </p>
+                    <p class="card-info"> Catch the hottets Punjabi tracks wit... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/trending punjabi.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Trending Now... </p>
+                    <p class="card-info"> All that's viral stream now! </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/desi hits.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Desi Hits  </p>
+                    <p class="card-info"> Best of South Asian Music. Cover:Dilijit... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/mint.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> mint India </p>
+                    <p class="card-info"> Trending dance hits in India. Cover:... </p>
+                </div>
+
+                <div class="card">
+                    <img src="img/gaming tracks.jpg" alt="card-image">
+                    <button class="play-button"> <i class="fa-sharp fa-solid fa-play"></i> </button>
+                    <p class="card-title"> Top Gaming... </p>
+                    <p class="card-info"> Play the biggest gaming tracks! </p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div>
+                    <h3>Company</h3>
+                    <p>About</p>
+                    <p>Jobs</p>
+                    <p>For the Record</p>  
+                </div>
+
+                <div>
+                    <h3>Communities</h3>
+                    <p>For Artists </p>
+                    <p> Developers </p>
+                    <p> Advertising </p>
+                    <p> Investors </p>
+                    <p> Vendors </p>
+                </div>
+
+                <div>
+                    <h3>Useful inks</h3>
+                    <p> Support </p>
+                    <p> Free Mobile App </p>
+                </div>
+
+                <div>
+                    <h3>Spotify Plans</h3>
+                    <p> Premium Individual </p>
+                    <p> Premium Duo </p>
+                    <p> Premium Family </p>
+                    <p> Premium Student </p>
+                    <p> Spotify Free </p>
+                </div>
+
+                <div>
+                    <button> <i class="fa-brands fa-instagram"></i> </button>
+                    <button> <i class="fa-brands fa-twitter"></i> </button>
+                    <button> <i class="fa-brands fa-facebook"></i> </button>
+                </div>
+            </div>
+
+            <hr style="opacity: 0.2;"> 
+
+            <div class="footer-two">
+                <div class="last">
+                    <p> Legal </p>
+                    <p> Safety & Privacy Center </p>
+                    <p> Privacy Policy </p>
+                    <p> Cookies </p>
+                    <p> About Ads </p>
+                    <p> Accessibility </p>
+                </div>
+
+                <div style="padding: 15px; opacity: 0.7;">
+                    &copy; 2024 Spotify AB
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="controls">
+            <div class="song">
+                <img src="img/rollin.jpg" class="song-img">
+                <div class="song-title">
+                    <h2> Still Rollin </h2>
+                    <p> Shubh </p>
+                </div>
+                <i class="fa-regular fa-square-plus"></i>
+            </div>
+
+            
+
+            <div class="player">
+                <div class="player-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play" style="font-size: 2.2rem;"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="playback-bar">
+                    <span class="time">00.00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="time">2:54</span>
+                </div>
+            </div>
+            
+            <div class="mini-controls">
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" min="0" max="100" class="mini-progress-bar" step="1">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>
+
+    </div>   
+
+</body>  
+</html>
