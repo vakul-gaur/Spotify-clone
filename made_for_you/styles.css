@@ -1,0 +1,472 @@
+*{
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    user-select: none;
+}
+
+.main{
+    display: flex;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #000;
+    height: 100vh;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    border-radius: 0.7rem;
+    justify-content: space-between;
+    height: 140px;
+    padding: 0.5rem 0.75rem;    
+}
+
+.home-option {
+    font-size: 1.7rem;
+    font-weight: 550;
+    padding: 0.5rem 0.75rem;
+    opacity: 0.7;
+}
+
+.home-option:hover {
+    opacity: 1;
+}
+
+.home a {
+    line-height: 1.5rem;
+    margin-left: 1rem;
+}
+
+.home i {
+    font-size: 1.25rem;
+}
+
+.library{
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    border-radius: 0.7rem;
+    height: 27rem;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.7rem;
+}
+
+.lib-option {
+    padding: 0.5rem 0.75rem;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+.lib-option:hover {
+    opacity: 1;
+}
+
+.option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.option a {
+    margin-left: 1rem;
+}
+
+.lib-icons {
+    display: flex;
+    font-size: 1.25rem;
+    margin: auto 0px;
+}
+
+.lib-icons i {
+    opacity: 0.7;
+    padding-right: 0.75rem;
+}
+
+.lib-icons i:hover {
+    opacity: 1;
+}
+
+.lib-box{
+    background-color: #232323;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.p1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.p2 {
+    font-weight: 550;
+    font-size: 0.8rem;
+}
+
+.lib-btn {
+    border-radius: 100px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0.25rem 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: max-content;
+    border: none;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.lib-btn:hover {
+    transform: scale(1.03);
+}
+
+.contents {
+    background-color: rgb(7, 7, 7);
+    border-radius: 1rem;
+    height: 100vh;
+    flex:1;
+    overflow: auto;
+    padding: 0 1.5rem;
+}
+
+.nav {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 23px;
+    margin-bottom: 40px;
+    width: 104%;
+    margin-left: -24px;
+}
+
+.nav-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -0.3rem;
+}
+
+.arrow-btn{
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+    margin-right: 1.7rem;
+}
+
+.light-btn, .dark-btn{
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    width: max-content;
+    height: 2rem;
+    border: none;   
+    margin: 0 0.7rem 0 0;
+}
+
+.dark-btn, .next-btn{
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.dark-btn-two{
+    border-radius: 50%;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(46, 46, 46);
+    gap: 5px;
+    margin-right: 8px;
+}
+
+.light-btn:hover , .dark-btn:hover , .dark-btn-two:hover{
+    transform: scale(1.03);
+}
+
+.head{
+    display: flex;
+    width: 110%;
+    height: 28%;
+    margin-left: -3rem;
+    margin-top: -2.5rem;
+}
+
+.head img{
+    width: 10rem;
+    height: 10rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    border-radius: 0.3rem;
+}
+
+.head p{
+    padding-left: 1.3rem;
+    margin-top: 0.1rem;
+}
+
+.head h1{
+    font-size: 5.5rem;
+    font-weight: 900;
+    margin-left: -3.3rem;
+    margin-top: 1rem;
+}
+
+#p{
+    margin-left: -29.5rem;
+    margin-top: 7.8rem;
+    opacity: 0.8;
+}
+
+.head i{
+    margin-top: 9.8rem;
+    margin-left: -20.5rem;
+    color: rgb(30, 215, 96);
+    font-size: 1.5rem;
+}
+
+#name{
+    font-weight: 800;
+}
+
+#p2{
+    margin-left: -0.8rem;
+    margin-top: 9.9rem;
+}
+
+#time{
+    opacity: 0.7;
+}
+
+.heading{
+    /* background-image: linear-gradient(to bottom, rgb(100,108,132), black); */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 105%;
+    margin-left: -1.5rem;
+    opacity: 0.7;
+}
+
+#hr{
+    opacity: 0.2;
+    margin-top: -2.5rem;
+}
+
+.songs{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.song{
+    padding: 0.3rem;
+    display: flex;
+    border-radius: 0.3rem;
+    z-index: 1;
+}
+
+#play{
+    margin-right: 1.6rem;
+    opacity: 0.7;
+}
+
+.song img{
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 0.3rem;
+    margin-top: 0.2rem;
+}
+
+#song-heading{
+    font-size: 16px;
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    opacity: 0.9;
+}
+
+#song-album, #song-time{
+    opacity: 0.7;
+}
+
+#song-artist{
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 1.6rem;
+    margin-bottom: -1rem;
+}
+
+#song-heading:hover, #song-artist:hover, #song-album:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.song:hover{
+    background-color: rgb(48,44,44);
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 3rem;
+  }
+
+  .footer p{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .footer p:hover, .song-title h2:hover, .song-title p:hover{
+    text-decoration: underline;
+    opacity: 1;
+  }
+
+  .footer button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .footer button:hover{
+    background-color: rgb(103, 103, 103);
+  }
+
+  .footer-two{
+    margin-bottom: 130px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .last{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+  }
+
+  .last p{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  .last p:hover{
+    opacity: 1;
+  }
+
+  .controls {
+    background-color: black;
+    height: 5rem;
+    width: 100vw;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    z-index: 2;
+}
+
+.player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23rem;
+}
+
+.player-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.player-icons i{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.playback-bar {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    opacity: 0.9;
+}
+
+.time{
+    font-size: 13px;
+}
+
+.progress-bar {
+    width: 70%;
+    height: 5px;
+    border-radius: 100px;
+    accent-color: white;
+    cursor: pointer;
+}
+
+.progress-bar:hover, .mini-progress-bar:hover{
+    accent-color: #1db954;
+}
+
+.mini-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 12.5rem;
+    cursor: pointer;
+}
+
+.mini-controls i {
+    font-size: 0.8rem;
+} 
+
+.mini-progress-bar{
+    height: 3px;
+    border-radius: 100px;
+    accent-color: white;
+    cursor: pointer;
+    width: 50%;
+}
+
+
+
+

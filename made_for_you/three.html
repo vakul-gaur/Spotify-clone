@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Daily Mix 3 | Spotify Playlist </title>
+    <link rel="icon" href="img/logo.png" class="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head> 
+
+<body>
+    <div class="main">
+
+        <!-- sidebdhar -->
+        
+        <div class="sidebar">
+            <div class="home">
+                <div class="home-option" style="opacity: 1;">
+                    <a href="#"> <i class="fa-brands fa-spotify"></i> Spotify </a>
+                </div>
+                
+                <div class="home-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"> Home </a>
+                </div>
+
+                <div class="home-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#"> Search </a>
+                </div>
+            </div>
+
+
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option">
+                        <img src="img/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="lib-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Create your first playlist</p>
+                    <p class="p2">It's easy, we will help you</p>
+                    <button class="lib-btn"> Create playlist </button>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Let's find podcast to follow</p>
+                    <p class="p2">We'll keep you updated on new episodes</p>
+                    <button class="lib-btn"> Browse Podcast </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="contents">
+
+            <div class="nav" style="background-color: #a4bcc0;">
+
+                <div class="nav-1">
+                    <div>
+                        <button class="arrow-btn" onclick="goBack()"> <i class="fa-solid fa-angle-left"></i></button>  &nbsp;
+                        <button class="arrow-btn" onclick="goForward()"> <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+            
+                    <div class="nav-options">
+                        <button class="light-btn"> &nbsp; Explore Premium &nbsp; </button>
+                        <button class="dark-btn"> &nbsp; <i class="fa-solid fa-download"></i> Install App &nbsp; </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-bell"></i> </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-user"></i> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="head" style="background-image: linear-gradient(to bottom, #a4bcc0, #849898, #606464);">
+                <img src="img/daily3.jpg" alt="card-image">
+                <p> Playlist </p>
+                <h1> Daily Mix 3 </h1>
+                <p id="p"> Mitraz, Darshan Raval, The Prophe and more</p>
+                <i class="fa-brands fa-spotify" style="margin-left: -19.3rem;"></i> <p id="p2"> <span id="name">Spotify</span> • 50 songs, <span id="time"> about 2hr 30min </span></p>
+            </div>
+
+            <div class="heading" style="background-image: linear-gradient(to bottom, #a4bcc08a, black);">
+                <p style="margin-left: 3rem;"> # &nbsp; Title</p>
+                <p style="margin-left: 13.3rem;"> Album </p>
+                <p style="margin-right: 6.4rem;"> <i class="fa-regular fa-clock"></i> </p>
+            </div>
+
+            <hr id="hr">
+
+            <div class="songs">
+
+                <div class="song" onclick="togglePlay(1)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/akhiyaan gulab.jpg" alt="card-image">
+                    <h2 id="song-heading"> Akhiyaan&nbsp;Gulaab&nbsp;(From&nbsp;"Teri&nbsp;Baaton&nbsp;Mein&nbsp;Aisa&nbsp;Uljha&nbsp;Jiya") </h2>
+                    <p id="song-artist" style="margin-left: -26rem;"> Mitraz </p>
+                    <p id="song-album" style="margin-left: 31.1rem;"> Akhiyaan&nbsp;Gulaab&nbsp; </p>
+                    <p id="song-time" style="margin-left: 16.1rem;"> 2:35 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(2)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/dilawara.jpg" alt="card-image">
+                    <h2 id="song-heading"> Dilawara </h2>
+                    <p id="song-artist" style="margin-left: -4rem;"> The&nbsp;PropheC,&nbsp;Ezu </p>
+                    <p id="song-album" style="margin-left: 26.8rem;"> Dilawara </p>
+                    <p id="song-time" style="margin-left: 19.8rem;"> 4:10 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(3)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/tauba tauba.jpg" alt="card-image">
+                    <h2 id="song-heading"> Tauba&nbsp;Tauba </h2>
+                    <p id="song-artist" style="margin-left: -5.4rem;"> Karan&nbsp;Aujla </p>
+                    <p id="song-album" style=" margin-left: 29.1rem;"> Tauba&nbsp;Tauba&nbsp;(From&nbsp;"Bad&nbsp;Newz) </p>
+                    <p id="song-time" style="margin-left: 10.2rem;"> 3:22 </p>
+                </div> 
+
+                <div class="song" onclick="togglePlay(4)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/soni soni.jpg" alt="card-image">
+                    <h2 id="song-heading"> Soni&nbsp;Soni&nbsp;(From&nbsp;"Ishq&nbsp;Vishk&nbsp;Rebound") </h2>
+                    <p id="song-artist" style="margin-left: -17.1rem;"> Dilijit&nbsp;Dosanjh </p>
+                    <p id="song-album" style="margin-left: 28.3rem;"> Soni&nbsp;Soni&nbsp;(From&nbsp;"Ishq&nbsp;Vishk&nbsp;Rebound") </p>
+                    <p id="song-time" style="margin-left: 6.9rem;"> 2:56 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(5)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/blue eyes.jpg" alt="card-image">
+                    <h2 id="song-heading"> Blue&nbsp;Eyes </h2>
+                    <p id="song-artist" style="margin-left: -4.2rem;"> Yo&nbsp;Yo&nbsp;Honey&nbsp;Singh </p>
+                    <p id="song-album" style="margin-left: 26.6rem;"> Blue&nbsp;Eyes </p>
+                    <p id="song-time" style="margin-left: 19.3rem;"> 3:40 </p>
+                </div>   
+
+                <div class="song" onclick="togglePlay(6)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/mahiye jinna sohna.jpg" alt="card-image">
+                    <h2 id="song-heading"> Mahiye&nbsp;Jinna&nbsp;Sohna </h2>
+                    <p id="song-artist" style="margin-left: -8.8rem;"> Darshan&nbsp;Raval </p>
+                    <p id="song-album" style="margin-left: 28.2rem;"> Dard </p>
+                    <p id="song-time" style="margin-left: 21.2rem;"> 3:05 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(7)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/sarkar.jpg" alt="card-image">
+                    <h2 id="song-heading"> Sarkar </h2>
+                    <p id="song-artist" style="margin-left: -3rem;"> Jaura&nbsp;Phagwara </p>
+                    <p id="song-album" style="margin-left: 27.8rem;"> Sarkar </p>
+                    <p id="song-time" style="margin-left: 20.5rem;"> 3:30 </p>
+                </div>
+                
+                <div class="song" onclick="togglePlay(8)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/3 idiots.jpg" alt="card-image">
+                    <h2 id="song-heading"> Give&nbsp;me&nbsp;Some&nbsp;Sunshine </h2>
+                    <p id="song-artist" style="margin-left: -10.5rem;"> Suraj&nbsp;Jagan,&nbsp;Sharman&nbsp;Joshi </p>
+                    <p id="song-album" style="margin-left: 23.5rem;"> 3&nbsp;Idiots </p>
+                    <p id="song-time" style="margin-left: 20.2rem;"> 4:07 </p>
+                </div> 
+
+                <div class="song" onclick="togglePlay(9)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/lahore.jpg" alt="card-image">
+                    <h2 id="song-heading"> Lahore&nbsp;(From&nbsp;"Lahore") </h2>
+                    <p id="song-artist" style="margin-left: -10.3rem;"> Guru&nbsp;Randhawa </p>
+                    <p id="song-album" style="margin-left: 27.5rem;"> High&nbsp;Rated&nbsp;Gabru&nbsp;-Guru&nbsp;Randhawa </p>
+                    <p id="song-time" style="margin-left: 8rem;"> 3:17 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(10)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/8 parche.jpg" alt="card-image">
+                    <h2 id="song-heading"> 8&nbsp;Parche </h2>
+                    <p id="song-artist" style="margin-left: -3.9rem;"> Baani&nbsp;Sandhu,&nbsp;Gur&nbsp;Sidhu </p>
+                    <p id="song-album" style="margin-left: 24.5rem;"> 8&nbsp;Parche </p>
+                    <p id="song-time" style="margin-left: 19.5rem;"> 3:30 </p>
+                </div>
+
+                <!-- Audio elements for each song -->
+                <audio id="audio1" src="audio/Akhiyaan Gulaab.mp3"></audio>
+                <audio id="audio2" src="audio/Dilawara.mp3"></audio>
+                <audio id="audio3" src="audio/tauba tauba.mp3"></audio>
+                <audio id="audio4" src="audio/.mp3"></audio>
+                <audio id="audio5" src="audio/.mp3"></audio>
+                <audio id="audio6" src="audio/Mahiye Jinna Sohna.mp3"></audio>
+                <audio id="audio7" src="audio/.mp3"></audio>
+                <audio id="audio8" src="audio/.mp3"></audio>
+                <audio id="audio9" src="audio/.mp3"></audio>
+                <audio id="audio10" src="audio/.mp3"></audio>
+            </div>
+
+            <!-- Footer -->
+
+            <div class="footer">
+                <div>
+                    <h3>Company</h3>
+                    <p>About</p>
+                    <p>Jobs</p>
+                    <p>For the Record</p>  
+                </div>
+
+                <div>
+                    <h3>Communities</h3>
+                    <p>For Artists </p>
+                    <p> Developers </p>
+                    <p> Advertising </p>
+                    <p> Investors </p>
+                    <p> Vendors </p>
+                </div>
+
+                <div>
+                    <h3>Useful inks</h3>
+                    <p> Support </p>
+                    <p> Free Mobile App </p>
+                </div>
+
+                <div>
+                    <h3>Spotify Plans</h3>
+                    <p> Premium Individual </p>
+                    <p> Premium Duo </p>
+                    <p> Premium Family </p>
+                    <p> Premium Student </p>
+                    <p> Spotify Free </p>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/spotify/" target="_blank"><button> <i class="fa-brands fa-instagram"></i> </button> </a>
+                    <a href="https://x.com/spotify" target="_blank"> <button> <i class="fa-brands fa-twitter"></i> </button> </a>
+                    <a href="https://www.facebook.com/Spotify" target="_blank"> <button> <i class="fa-brands fa-facebook"></i> </button> </a>
+                </div>
+            </div>
+
+            <hr style="opacity: 0.2;"> 
+
+            <div class="footer-two">
+                <div class="last">
+                    <p> Legal </p>
+                    <p> Safety & Privacy Center </p>
+                    <p> Privacy Policy </p>
+                    <p> Cookies </p>
+                    <p> About Ads </p>
+                    <p> Accessibility </p>
+                </div>
+
+                <div style="padding: 15px; opacity: 0.7;">
+                    &copy; 2024 Spotify AB
+                </div>
+            </div>
+        </div> 
+
+        <!-- Control Section -->
+
+        <div class="controls">
+            <!-- <div class="song">
+                <img src="img/rollin.jpg" class="song-img">
+                <div class="song-title">
+                    <h2> Still Rollin </h2>
+                    <p> Shubh </p>
+                </div>
+                <i class="fa-regular fa-square-plus"></i>
+            </div> -->
+
+            <div class="player">
+                <div class="player-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play" style="font-size: 2.2rem;"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="playback-bar">
+                    <span id="currentTime">00:00</span>
+                    <input type="range" class="progress-bar" id="progressBar" value="0" max="100">
+                    <span id="durationTime">00:00</span>
+                </div>
+            </div>
+            
+            <div class="mini-controls">
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="mini-progress-bar" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

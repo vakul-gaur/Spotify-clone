@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Daily Mix 5 | Spotify Playlist </title>
+    <link rel="icon" href="img/logo.png" class="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head> 
+
+<body>
+    <div class="main">
+
+        <!-- sidebdhar -->
+        
+        <div class="sidebar">
+            <div class="home">
+                <div class="home-option" style="opacity: 1;">
+                    <a href="#"> <i class="fa-brands fa-spotify"></i> Spotify </a>
+                </div>
+                
+                <div class="home-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"> Home </a>
+                </div>
+
+                <div class="home-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#"> Search </a>
+                </div>
+            </div>
+
+
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option">
+                        <img src="img/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="lib-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Create your first playlist</p>
+                    <p class="p2">It's easy, we will help you</p>
+                    <button class="lib-btn"> Create playlist </button>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Let's find podcast to follow</p>
+                    <p class="p2">We'll keep you updated on new episodes</p>
+                    <button class="lib-btn"> Browse Podcast </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="contents">
+
+            <div class="nav" style="background-color: #d4b058;">
+
+                <div class="nav-1">
+                    <div>
+                        <button class="arrow-btn" onclick="goBack()"> <i class="fa-solid fa-angle-left"></i></button>  &nbsp;
+                        <button class="arrow-btn" onclick="goForward()"> <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+            
+                    <div class="nav-options">
+                        <button class="light-btn"> &nbsp; Explore Premium &nbsp; </button>
+                        <button class="dark-btn"> &nbsp; <i class="fa-solid fa-download"></i> Install App &nbsp; </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-bell"></i> </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-user"></i> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="head" style="background-image: linear-gradient(to bottom, #d4b058, #a88f4e, #785c34);">
+                <img src="img/daily5.jpg" alt="card-image">
+                <p> Playlist </p>
+                <h1> Daily Mix 5 </h1>
+                <p id="p"> Ed Sheeran. </p>
+                <i class="fa-brands fa-spotify" style="margin-left: -5.1rem;"></i> <p id="p2"> <span id="name">Spotify</span> • 50 songs, <span id="time"> about 2hr 45min </span></p>
+            </div>
+
+            <div class="heading" style="background-image: linear-gradient(to bottom, #d4b0588a, black);">
+                <p style="margin-left: 3rem;"> # &nbsp; Title</p>
+                <p style="margin-left: 13.3rem;"> Album </p>
+                <p style="margin-right: 6.4rem;"> <i class="fa-regular fa-clock"></i> </p>
+            </div>
+
+            <hr id="hr">
+
+            <div class="songs">
+
+                <div class="song" onclick="togglePlay(1)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/divide.jpg" alt="card-image">
+                    <h2 id="song-heading"> Shape&nbsp;of&nbsp;You </h2>
+                    <p id="song-artist" style="margin-left: -5.7rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style="margin-left: 29.2rem;"> ÷&nbsp;(Deluxe) </p>
+                    <p id="song-time" style="margin-left: 19.4rem;"> 4:23 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(2)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/divide.jpg" alt="card-image">
+                    <h2 id="song-heading"> Perfect </h2>
+                    <p id="song-artist" style="margin-left: -3.3rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style="margin-left: 29.2rem;"> ÷&nbsp;(Deluxe) </p>
+                    <p id="song-time" style="margin-left: 19.4rem;"> 4:23 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(3)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/=.jpg" alt="card-image">
+                    <h2 id="song-heading"> Shivers </h2>
+                    <p id="song-artist" style="margin-left: -3.3rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style="margin-left: 29.3rem;"> =(Tour&nbsp;Edition) </p>
+                    <p id="song-time" style="margin-left: 17.3rem;"> 3:27 </p>
+                </div> 
+
+                <div class="song" onclick="togglePlay(4)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/deluxe edition.jpg" alt="card-image">
+                    <h2 id="song-heading"> Photograph </h2>
+                    <p id="song-artist" style="margin-left: -5.3rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style=" margin-left: 29.4rem;"> ×&nbsp;(Deluxe&nbsp;Edition)</p>
+                    <p id="song-time" style="margin-left: 16rem;"> 4:18 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(5)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/no6.jpg" alt="card-image">
+                    <h2 id="song-heading"> I&nbsp;Don't&nbsp;Care&nbsp;(with&nbsp;Justin&nbsp;Beiber) </h2>
+                    <p id="song-artist" style="margin-left: -14.1rem;"> Ed&nbsp;Sheeran,&nbsp;Justin&nbsp;Beiber </p>
+                    <p id="song-album" style="margin-left: 24.1rem;"> N0.6&nbsp;Collaborations&nbsp;Project </p>
+                    <p id="song-time" style="margin-left: 11.6rem;"> 3:39 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(6)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/deluxe edition.jpg" alt="card-image">
+                    <h2 id="song-heading"> Thinking&nbsp;out&nbsp;Loud </h2>
+                    <p id="song-artist" style="margin-left: -7.9rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style="margin-left: 29.4rem;"> ×&nbsp;(Deluxe&nbsp;Edition) </p>
+                    <p id="song-time" style="margin-left: 16rem;"> 4:41 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(7)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/-.jpg" alt="card-image">
+                    <h2 id="song-heading"> Boat </h2>
+                    <p id="song-artist" style="margin-left: -2.1rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style="margin-left: 29.6rem;"> -&nbsp;(Deluxe) </p>
+                    <p id="song-time" style="margin-left: 19.4rem;"> 3:05 </p>
+                </div>
+                
+                <div class="song" onclick="togglePlay(8)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/no6.jpg" alt="card-image">
+                    <h2 id="song-heading"> Cross&nbsp;Me(feat.&nbsp;Chance&nbsp;the&nbsp;Rapper&nbsp;&&nbsp;PnB&nbsp;Rock) </h2>
+                    <p id="song-artist" style="margin-left: -20.8rem;"> Ed&nbsp;Sheeran,&nbsp;Chance&nbsp;the&nbsp;Rapper,&nbsp;PnB&nbsp;Rock </p>
+                    <p id="song-album" style="margin-left: 18.2rem;"> N0.6&nbsp;Collaborations&nbsp;Project </p>
+                    <p id="song-time" style="margin-left: 11.3rem;"> 3:26 </p>
+                </div> 
+
+                <div class="song" onclick="togglePlay(9)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/=.jpg" alt="card-image">
+                    <h2 id="song-heading"> 2step </h2>
+                    <p id="song-artist" style="margin-left: -2.5rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style="margin-left: 29.9rem;"> =(Tour&nbsp;Edition) </p>
+                    <p id="song-time" style="margin-left: 17rem;"> 2:33 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(10)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/-.jpg" alt="card-image">
+                    <h2 id="song-heading"> Moving&nbsp;-&nbsp;Bonus&nbsp;Track </h2>
+                    <p id="song-artist" style="margin-left: -9.5rem;"> Ed&nbsp;Sheeran </p>
+                    <p id="song-album" style="margin-left: 30rem;"> -&nbsp;(Deluxe) </p>
+                    <p id="song-time" style="margin-left: 19.1rem;"> 3:35 </p>
+                </div>
+
+                <!-- Audio elements for each song -->
+                <audio id="audio1" src="audio/Shape of You.mp3"></audio>
+                <audio id="audio2" src="audio/.mp3"></audio>
+                <audio id="audio3" src="audio/.mp3"></audio>
+                <audio id="audio4" src="audio/.mp3"></audio>
+                <audio id="audio5" src="audio/.mp3"></audio>
+                <audio id="audio6" src="audio/.mp3"></audio>
+                <audio id="audio7" src="audio/.mp3"></audio>
+                <audio id="audio8" src="audio/.mp3"></audio>
+                <audio id="audio9" src="audio/.mp3"></audio>
+                <audio id="audio10" src="audio/.mp3"></audio>
+            </div>
+
+            <!-- Footer -->
+
+            <div class="footer">
+                <div>
+                    <h3>Company</h3>
+                    <p>About</p>
+                    <p>Jobs</p>
+                    <p>For the Record</p>  
+                </div>
+
+                <div>
+                    <h3>Communities</h3>
+                    <p>For Artists </p>
+                    <p> Developers </p>
+                    <p> Advertising </p>
+                    <p> Investors </p>
+                    <p> Vendors </p>
+                </div>
+
+                <div>
+                    <h3>Useful inks</h3>
+                    <p> Support </p>
+                    <p> Free Mobile App </p>
+                </div>
+
+                <div>
+                    <h3>Spotify Plans</h3>
+                    <p> Premium Individual </p>
+                    <p> Premium Duo </p>
+                    <p> Premium Family </p>
+                    <p> Premium Student </p>
+                    <p> Spotify Free </p>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/spotify/" target="_blank"><button> <i class="fa-brands fa-instagram"></i> </button> </a>
+                    <a href="https://x.com/spotify" target="_blank"> <button> <i class="fa-brands fa-twitter"></i> </button> </a>
+                    <a href="https://www.facebook.com/Spotify" target="_blank"> <button> <i class="fa-brands fa-facebook"></i> </button> </a>
+                </div>
+            </div>
+
+            <hr style="opacity: 0.2;"> 
+
+            <div class="footer-two">
+                <div class="last">
+                    <p> Legal </p>
+                    <p> Safety & Privacy Center </p>
+                    <p> Privacy Policy </p>
+                    <p> Cookies </p>
+                    <p> About Ads </p>
+                    <p> Accessibility </p>
+                </div>
+
+                <div style="padding: 15px; opacity: 0.7;">
+                    &copy; 2024 Spotify AB
+                </div>
+            </div>
+        </div> 
+
+        <!-- Control Section -->
+
+        <div class="controls">
+            <!-- <div class="song">
+                <img src="img/rollin.jpg" class="song-img">
+                <div class="song-title">
+                    <h2> Still Rollin </h2>
+                    <p> Shubh </p>
+                </div>
+                <i class="fa-regular fa-square-plus"></i>
+            </div> -->
+
+            <div class="player">
+                <div class="player-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play" style="font-size: 2.2rem;"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="playback-bar">
+                    <span id="currentTime">00:00</span>
+                    <input type="range" class="progress-bar" id="progressBar" value="0" max="100">
+                    <span id="durationTime">00:00</span>
+                </div>
+            </div>
+            
+            <div class="mini-controls">
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="mini-progress-bar" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

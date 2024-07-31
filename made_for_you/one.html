@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Daily Mix 1 | Spotify Playlist </title>
+    <link rel="icon" href="img/logo.png" class="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head> 
+
+<body>
+    <div class="main">
+
+        <!-- sidebdhar -->
+        
+        <div class="sidebar">
+            <div class="home">
+                <div class="home-option" style="opacity: 1;">
+                    <a href="#"> <i class="fa-brands fa-spotify"></i> Spotify </a>
+                </div>
+                
+                <div class="home-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"> Home </a>
+                </div>
+
+                <div class="home-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#"> Search </a>
+                </div>
+            </div>
+
+
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option">
+                        <img src="img/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="lib-icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Create your first playlist</p>
+                    <p class="p2">It's easy, we will help you</p>
+                    <button class="lib-btn"> Create playlist </button>
+                </div>
+
+                <div class="lib-box">
+                    <p class="p1">Let's find podcast to follow</p>
+                    <p class="p2">We'll keep you updated on new episodes</p>
+                    <button class="lib-btn"> Browse Podcast </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="contents">
+
+            <div class="nav" style="background-color: rgb(192,204,244);">
+
+                <div class="nav-1">
+                    <div>
+                        <button class="arrow-btn" onclick="goBack()"> <i class="fa-solid fa-angle-left"></i></button>  &nbsp;
+                        <button class="arrow-btn" onclick="goForward()"> <i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+            
+                    <div class="nav-options">
+                        <button class="light-btn"> &nbsp; Explore Premium &nbsp; </button>
+                        <button class="dark-btn"> &nbsp; <i class="fa-solid fa-download"></i> Install App &nbsp; </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-bell"></i> </button>
+                        <button class="dark-btn-two"> <i class="fa-regular fa-user"></i> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="head" style="background-image: linear-gradient(to bottom, #c0ccf4, #94a0b8, #646c84);">
+                <img src="img/daily1.jpg" alt="card-image">
+                <p> Playlist </p>
+                <h1> Daily Mix 1</h1>
+                <p id="p"> Shubh,AP Dhillon, Sidhu Moose Wala and more </p>
+                <i class="fa-brands fa-spotify"></i> <p id="p2"> <span id="name">Spotify</span> • 50 songs, <span id="time"> about 2hr 30min </span></p>
+            </div>
+
+            <div class="heading" style="background-image: linear-gradient(to bottom, #c0ccf48a, black);">
+                <p style="margin-left: 3rem;"> # &nbsp; Title</p>
+                <p style="margin-left: 13.3rem;"> Album </p>
+                <p style="margin-right: 6.4rem;"> <i class="fa-regular fa-clock"></i> </p>
+            </div>
+
+            <hr id="hr">
+
+            <div class="songs">
+
+                <div class="song" onclick="togglePlay(1)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/be mine.jpg" alt="card-image">
+                    <h2 id="song-heading"> Be&nbsp;Mine </h2>
+                    <p id="song-artist" style="margin-left: -3.8rem;"> Shubh </p>
+                    <p id="song-album" style=" margin-left: 31.5rem;"> Be&nbsp;Mine </p>
+                    <p id="song-time" style="margin-left: 20rem;"> 2:30 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(2)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/295.jpg" alt="card-image">
+                    <h2 id="song-heading"> 295 </h2>
+                    <p id="song-artist" style="margin-left: -1.8rem;"> Sidhu&nbsp;Moose&nbsp;Wala </p>
+                    <p id="song-album" style="margin-left: 26.7rem;"> Moosetape </p>
+                    <p id="song-time" style="margin-left: 18.6rem;"> 4:32 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(3)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/laado.jpg" alt="card-image">
+                    <h2 id="song-heading"> Laado </h2>
+                    <p id="song-artist" style="margin-left: -2.7rem;"> MC&nbsp;SQUARE,&nbsp;Hiten </p>
+                    <p id="song-album" style="margin-left: 26.3rem;"> Laado  </p>
+                    <p id="song-time" style="margin-left: 20.8rem;"> 2:41 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(4)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/born to shine.jpg" alt="card-image">
+                    <h2 id="song-heading"> Born&nbsp;to&nbsp;Shine </h2>
+                    <p id="song-artist" style="margin-left: -6rem;"> Dilijit&nbsp;Dosanjh </p>
+                    <p id="song-album" style="margin-left: 28.4rem;"> G.O.A.T </p>
+                    <p id="song-time" style="margin-left: 20.1rem;"> 3:37 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(5)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/tere te.jpg" alt="card-image">
+                    <h2 id="song-heading"> TERE&nbsp;TE </h2>
+                    <p id="song-artist" style="margin-left: -3.7rem;"> AP&nbsp;Dhillon,&nbsp;Gurinder&nbsp;Gill </p>
+                    <p id="song-album" style="margin-left: 24.3rem;"> HIDDEN&nbsp;GEMS </p>
+                    <p id="song-time" style="margin-left: 16.6rem;"> 1:54 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(6)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/paon ki jutti.jpg" alt="card-image">
+                    <h2 id="song-heading"> Paon&nbsp;Ki&nbsp;Jutti </h2>
+                    <p id="song-artist" style="margin-left: -5.7rem;"> Jyoti&nbsp;Nooran,&nbsp;Janni,&nbsp;Bunny </p>
+                    <p id="song-album" style="margin-left: 23.8rem;"> Paon&nbsp;Ki&nbsp;Jutti </p>
+                    <p id="song-time" style="margin-left: 18rem;"> 3:28 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(7)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/sarkar.jpg" alt="card-image">
+                    <h2 id="song-heading"> Sarkar </h2>
+                    <p id="song-artist" style="margin-left: -3rem;"> Jaura&nbsp;Phagwara </p>
+                    <p id="song-album" style="margin-left: 28rem;"> Sarkar </p>
+                    <p id="song-time" style="margin-left: 20.7rem;"> 3:30 </p>
+                </div>
+                
+                <div class="song" onclick="togglePlay(8)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/bijlee.jpg" alt="card-image">
+                    <h2 id="song-heading"> Bijlee&nbsp;Bijlee </h2>
+                    <p id="song-artist" style="margin-left: -5.3rem;"> Hardy&nbsp;Sandhu </p>
+                    <p id="song-album" style="margin-left: 28.7rem;"> Bijlee&nbsp;Bijlee </p>
+                    <p id="song-time" style="margin-left: 18.5rem;"> 2:48 </p>
+                </div> 
+
+                <div class="song" onclick="togglePlay(9)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/cheques.jpg" alt="card-image">
+                    <h2 id="song-heading"> Cheques </h2>
+                    <p id="song-artist" style="margin-left: -3.8rem;"> Shubh </p>
+                    <p id="song-album" style="margin-left: 31.5rem;"> Still&nbsp;Rollin </p>
+                    <p id="song-time" style="margin-left: 19.2rem;"> 3:03 </p>
+                </div>
+
+                <div class="song" onclick="togglePlay(10)">
+                    <p id="play" class="play-button"> ▶ </p>
+                    <img src="img/bewafa.jpg" alt="card-image">
+                    <h2 id="song-heading"> Bewafa </h2>
+                    <p id="song-artist" style="margin-left: -3.4rem;"> Imran&nbsp;Khan </p>
+                    <p id="song-album" style="margin-left: 29.6rem;"> Unforgettable </p>
+                    <p id="song-time" style="margin-left: 17.4rem;"> 3:44 </p>
+                </div>
+
+                <!-- Audio elements for each song -->
+                <audio id="audio1" src="audio/Be Mine.mp3"></audio>
+                <audio id="audio2" src="audio/295.mp3"></audio>
+                <audio id="audio3" src="audio/Laado.mp3"></audio>
+                <audio id="audio4" src="audio/Born To Shine.mp3"></audio>
+                <audio id="audio5" src="audio/.mp3"></audio>
+                <audio id="audio6" src="audio/.mp3"></audio>
+                <audio id="audio7" src="audio/.mp3"></audio>
+                <audio id="audio8" src="audio/.mp3"></audio>
+                <audio id="audio9" src="audio/.mp3"></audio>
+                <audio id="audio10" src="audio/.mp3"></audio>
+            </div>
+
+            <!-- Footer -->
+
+            <div class="footer">
+                <div>
+                    <h3>Company</h3>
+                    <p>About</p>
+                    <p>Jobs</p>
+                    <p>For the Record</p>  
+                </div>
+
+                <div>
+                    <h3>Communities</h3>
+                    <p>For Artists </p>
+                    <p> Developers </p>
+                    <p> Advertising </p>
+                    <p> Investors </p>
+                    <p> Vendors </p>
+                </div>
+
+                <div>
+                    <h3>Useful inks</h3>
+                    <p> Support </p>
+                    <p> Free Mobile App </p>
+                </div>
+
+                <div>
+                    <h3>Spotify Plans</h3>
+                    <p> Premium Individual </p>
+                    <p> Premium Duo </p>
+                    <p> Premium Family </p>
+                    <p> Premium Student </p>
+                    <p> Spotify Free </p>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/spotify/" target="_blank"><button> <i class="fa-brands fa-instagram"></i> </button> </a>
+                    <a href="https://x.com/spotify" target="_blank"> <button> <i class="fa-brands fa-twitter"></i> </button> </a>
+                    <a href="https://www.facebook.com/Spotify" target="_blank"> <button> <i class="fa-brands fa-facebook"></i> </button> </a>
+                </div>
+            </div>
+
+            <hr style="opacity: 0.2;"> 
+
+            <div class="footer-two">
+                <div class="last">
+                    <p> Legal </p>
+                    <p> Safety & Privacy Center </p>
+                    <p> Privacy Policy </p>
+                    <p> Cookies </p>
+                    <p> About Ads </p>
+                    <p> Accessibility </p>
+                </div>
+
+                <div style="padding: 15px; opacity: 0.7;">
+                    &copy; 2024 Spotify AB
+                </div>
+            </div>
+        </div> 
+
+        <!-- Control Section -->
+
+        <div class="controls">
+            <!-- <div class="song">
+                <img src="img/rollin.jpg" class="song-img">
+                <div class="song-title">
+                    <h2> Still Rollin </h2>
+                    <p> Shubh </p>
+                </div>
+                <i class="fa-regular fa-square-plus"></i>
+            </div> -->
+
+            <div class="player">
+                <div class="player-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play" style="font-size: 2.2rem;"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+
+                <div class="playback-bar">
+                    <span id="currentTime">00:00</span>
+                    <input type="range" class="progress-bar" id="progressBar" value="0" max="100">
+                    <span id="durationTime">00:00</span>
+                </div>
+            </div>
+            
+            <div class="mini-controls">
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="mini-progress-bar" id="volumeControl" min="0" max="1" step="0.01" value="1">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </div>
+        </div>    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
